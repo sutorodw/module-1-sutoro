@@ -1,0 +1,123 @@
+/* General Style */
+body {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.font-bungee {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-noto {
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+}
+
+/* Navbar Style with Flex */
+.sticky-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  align-items:center;
+  gap: 5px;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(to right, #99ff66 0%, #009900 100%);
+}
+
+.sticky-nav a{
+  padding: 10px 5px;
+  font-family: "Fredericka the Great", serif;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sticky-nav a:hover {
+  color: #000000;
+}
+
+.nav-corner {
+  flex: 10 10;
+  color: #ff0000 !important;
+}
+
+/* Body with Flex */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #009933;
+  font-weight: bold;
+}
+
+.flex-container img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1px;
+}
+
+
+/* Grid Style */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  color: #1a1a1a;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-container {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.aspect-ratio {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Textarea Style */
+textarea {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Footer Style */
+.footer {
+  background: linear-gradient(to left, #99ff66 0%, #009900 100%);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #ffffff;
+}
+
+
