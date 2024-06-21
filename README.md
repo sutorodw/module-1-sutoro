@@ -97,4 +97,4 @@ This is a basic HTML website prohect showcasing a mini-blog with a focus on phot
 
 
 ## Screenshot
-![Screenshot of the website](images/screenshot.png)
+![Screenshot of the website](images/screenshot.jpeg)

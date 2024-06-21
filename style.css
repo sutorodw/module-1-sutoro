@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Noto+Sans&family=Fredericka+the+Great:wght@400;700&display=swap');
+
 /* General Style */
+header {
+  margin-bottom: 100px;
+}
+
 body {
   font-family: 'Cantarell', sans-serif;
 }
@@ -139,12 +145,19 @@ textarea {
 .footer {
   background: linear-gradient(to left, #99ff66 0%, #009900 100%);
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  height: 100px;
   color: #ffffff;
-  padding-left: 15px;
+  padding: 5px 10px;
+  margin: 100px -10px -10px -10px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-
+.footer-container img {
+  width: 30px;
+  height: 30px;
+}
