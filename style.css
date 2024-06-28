@@ -38,7 +38,7 @@ hr {
   align-items:center;
   gap: 5px;
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right, #99ff66 0%, #009900 100%);
   z-index: 98;
 }
@@ -75,7 +75,7 @@ hr {
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.2s ease;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .menu a:hover {
@@ -92,7 +92,7 @@ hr {
   z-index: 99;
   position: fixed;
   top: 0;
-  margin: 16px 10px;
+  margin: 0px 10px;
 }
 
 /* Animated Text Shadow */
@@ -120,7 +120,45 @@ hr {
   font-size: 4em;
 }
 
-/* Grid Style */
+/* Asymmetrical Grid */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 20px 0; 
+  }
+  
+  .children {
+    border: 1px solid #000000;
+    overflow: hidden;
+  }
+
+.children img {
+  object-fit: cover;
+  height: 300px;
+}
+
+  .div1 { 
+    grid-area: 1 / 1 / 3 / 3;
+   }
+  .div2 { 
+    grid-area: 1 / 3 / 3 / 4;
+   }
+  .div3 { 
+    grid-area: 1 / 4 / 6 / 6;
+   }
+  .div4 { 
+    grid-area: 3 / 1 / 6 / 2; 
+  }
+  .div5 { 
+    grid-area: 3 / 2 / 6 / 4;
+  }
+
+
+
+/* Grid Style Gallery*/
 .grid-container {
   display: grid;
   gap: 10px;
@@ -147,6 +185,16 @@ hr {
 
 .aspect-ratio:hover {
   transform: scale(1.07);
+}
+
+/* Style for the checkbox groups */
+.checkbox-group {
+  margin-bottom: 10px; /* Add space between each checkbox group */
+}
+
+/* Style for the checkboxes */
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px; /* Add space between the checkbox and the label */
 }
 
 /* Textarea Style */
@@ -190,10 +238,9 @@ textarea {
   .menu {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 200px;
     position: absolute;
     top: 100%;
-    left: 0;
     background: linear-gradient(to right, #99ff66 0%, #009900 100%);
     opacity: 0.9;
   }
@@ -218,6 +265,23 @@ textarea {
     text-align: right;
     padding: 10px 30px 10px 0;
   }
+}
+
+/* Media query for Asymmetical Grid */
+@media (max-width: 800px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+    
+  .div1 { grid-area: 1 / 1 / 3 / 3; }
+  .div2 { grid-area: 1 / 3 / 3 / 4; }
+  .div3 { grid-area: 3 / 1 / 7 / 4; }
+  .div4 { grid-area: 7 / 1 / 9 / 2; }
+  .div5 { grid-area: 7 / 2 / 9 / 4; }
 }
 
 /* Media Query for Gallery */
