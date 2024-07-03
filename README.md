@@ -1,11 +1,12 @@
 # MiniBlog - A Simple Blog Website
-This is a basic HTML website prohect showcasing a mini-blog with a focus on photos, short videos, and travel experiences. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation. Add content that fits the topic and create a form with text boxes, a big text box, a button to submit, and checkboxes to make it more interactive and useful for users.
+This is a basic HTML website project showcasing a mini-blog with a focus on photos, short videos, and travel experiences. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation. Add content that fits the topic and create a form with text boxes, a big text box, a button to submit, and checkboxes to make it more interactive and useful for users.
 
 
 ## Features
 
 - **Responsive Layout**: The gallery items adjust based on the screen width.
 - **Google Fonts**: Uses the Cantarell font from Google Fonts.
+- **Parallax Effect**: The homepage features a parallax scrolling effect.
 - **Navigation Menu**: Links to Home, About Us, and Contact Us pages.
 - **Gallery Section**: Displays images with descriptions.
 - **Embedded Video**: A YouTube video embedded in the page.
@@ -30,13 +31,16 @@ This is a basic HTML website prohect showcasing a mini-blog with a focus on phot
   - `<meta name="author" content="Sutoro">`
   - `<meta property="og:title" content="MiniBlog">`
   - `<meta property="og:description" content="A basic HTML website showcasing a mini-blog with a focus on photos, short videos, and travel experiences.">`
-  - `<meta property="og:image" content="images/header.jpeg">`
   - `<meta property="og:url" content="http://instagram.com/sutorodw">`
 
 - The `<link>` tag is used to establish relationships with other documents, typically for linking stylesheets or pre-defined relationships.
   - `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap">`
 
-- The `<style>` tag contains CSS to style the HTML elements within the document.
+- The `<style>` tag contains CSS to style the HTML elements within the document 
+
+- The `<responsive>` tag contains media queries are used to create a responsive design for different screen sizes.
+
+- The `<script>` tag contains A simple JavaScript script for the hamburger menu. 
 
 - The `<title>` tag defines the browser title bar text, representing the webpage's title.
   - `<title>MiniBlog</title>`
@@ -46,18 +50,14 @@ This is a basic HTML website prohect showcasing a mini-blog with a focus on phot
 - The `<body>` tag encompasses all visible webpage content, although it can also include non-visible elements like scripts and styles.
 
 - The `<header>` tag represents introductory content or a set of navigational links.
-  - `<header>`
-  - `<img src="images/header.jpeg" alt="Header Image">`
 
 - The `<nav>` tag defines a set of navigation links.
   - `<nav>`
-  - `<a href="/index.html" style="text-align: right;"><b>🏠 Home</b></a> |`
-  - `<a href="/about/index.html" style="text-align: right;"><b>📒 About Us</b></a> |`
-  - `<a href="/contact/index.html" style="text-align: right;"><b>☎️ Contact Us</b></a>`
+  - `<a href="/index.html">🏠 Home</a>`
+  - `<a href="#about">📒 About</a>`
+  - `<a href="#contact">☎️ Contact</a>`
 
-- The `<hr>` tag represents a thematic break between paragraph-level elements.
-
-- The `<h1>` tag is utilized for the primary heading of the webpage.
+- The `<h1>` tag is utilised for the primary heading of the webpage.
   - `<h1 style="color: #0066ff; background-color: #b3daff; text-align: center;">Mini Blog</h1>`
 
 - The `<p>` tag is used for paragraphs of text.

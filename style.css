@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* General Style */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
-  margin-bottom: 100px;
+  margin-bottom: 45px;
 }
 
 body {
   font-family: 'Cantarell', sans-serif;
+  background: #f1f1f1;
 }
 
 .font-noto {
@@ -14,13 +20,21 @@ body {
   font-style: normal;
 }
 
-h1 {
+h1, h2 {
   color: #009900;
   text-align: center;
 }
 
+h2 {
+  margin-top: 25px;
+}
+
 hr {
   border: 1px solid #009900;
+}
+
+.title {
+  margin: 25px 0 0 20px;
 }
 
 #p1 {
@@ -34,12 +48,11 @@ hr {
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  left: 0;
   align-items:center;
-  gap: 5px;
   width: 100%;
   height: 3rem;
   background: linear-gradient(to right, #99ff66 0%, #009900 100%);
+  opacity: 95%;
   z-index: 98;
 }
 
@@ -52,33 +65,31 @@ hr {
   cursor: pointer;
 }
 
-.line {
+.bar {
   width: 100%;
   height: 4px;
   background-color: #ffffff;
   border-radius: 2px;
   transition: all 0.3s ease;
-  margin-right: 20px;
 }
 
-.menu {
+.nav {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
 }
 
-.menu a {
+.nav a {
   flex-shrink: 5;
   padding: 15px 0;
-  margin: 5px 20px 0 0;
   color: #ffffff;
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.2s ease;
-  margin-top: 0px;
+  margin-right: 20px;
 }
 
-.menu a:hover {
+.nav a:hover {
   color: #ff8c1a;
   font-weight: bold;
   transform: scale(1.2);
@@ -107,100 +118,108 @@ hr {
 
 /* Parallax */
 .parallax {
-  background-image: url('images/parallax.webp');
+  background-image: url('images/parallax.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: #e0e0e0;
-  margin: 0 -10px;
   height: 70vh;
 }
 
-.parallax p{
-  font-size: 4em;
+.parallax h1{
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
 /* Asymmetrical Grid */
-.parent {
+.about {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 150px);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  margin: 20px 0; 
-  }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 100px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 25px 5% -100px 5%;
+}
   
-  .children {
-    border: 1px solid #000000;
-    overflow: hidden;
-  }
-
-.children img {
-  object-fit: cover;
-  height: 300px;
+.about-container {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
 }
 
-  .div1 { 
-    grid-area: 1 / 1 / 3 / 3;
-   }
-  .div2 { 
-    grid-area: 1 / 3 / 3 / 4;
-   }
-  .div3 { 
-    grid-area: 1 / 4 / 6 / 6;
-   }
-  .div4 { 
-    grid-area: 3 / 1 / 6 / 2; 
-  }
-  .div5 { 
-    grid-area: 3 / 2 / 6 / 4;
-  }
+.about-container:hover {
+  background: #009900;
+  color: #ffffff;
+}
 
+.about-container img {
+  object-fit: cover;
+  height: 300px;
+  padding-bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.about-container h2 {
+  margin: 10px 0;
+}
+
+.about-container h3 {
+  text-align: right;
+  margin: 10px 0;
+  padding: 0 20px 0 20px;
+}
+
+.about-container p {
+  text-align: justify;
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 3; }
+.div2 { grid-area: 1 / 3 / 4 / 4; }
+.div3 { grid-area: 3 / 1 / 6 / 2; }
+.div4 { grid-area: 4 / 3 / 7 / 4; }
+.div5 { grid-area: 3 / 2 / 7 / 3; }
+.div6 { grid-area: 6 / 1 / 7 / 2; }
 
 
 /* Grid Style Gallery*/
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   padding: 10px;
-  margin-bottom: 50px;
 }
 
 .grid-item {
   color: #1a1a1a;
-  border: 1px solid #e6e6e6;
+  background: #ffffff;
   text-align: center;
   padding: 20px;
+  border-radius: 10px;
 }
 
-.grid-container {
-  grid-template-columns: 1fr;
+.grid-item h3 {
+  margin-bottom: 15px;
 }
 
-.aspect-ratio {
+.grid-item img {
   object-fit: cover;
   width: 100%;
   transition: transform .3s;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.aspect-ratio:hover {
+.grid-item img:hover {
   transform: scale(1.07);
 }
 
-/* Style for the checkbox groups */
-.checkbox-group {
-  margin-bottom: 10px; /* Add space between each checkbox group */
-}
-
-/* Style for the checkboxes */
-.checkbox-group input[type="checkbox"] {
-  margin-right: 5px; /* Add space between the checkbox and the label */
-}
-
-/* Textarea Style */
-textarea {
-  width: 100%;
-  max-width: 500px;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Footer Style */
@@ -210,7 +229,7 @@ textarea {
   height: 100px;
   color: #ffffff;
   padding: 5px 10px;
-  margin: 100px -10px -10px -10px;
+  margin-top: 20px;
 }
 
 .footer-container {
@@ -222,78 +241,6 @@ textarea {
 .footer-container img {
   width: 30px;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-/* Media Query */
-
-/* Media Query for Navbar */
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-    text-align: center;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    width: 200px;
-    position: absolute;
-    top: 100%;
-    background: linear-gradient(to right, #99ff66 0%, #009900 100%);
-    opacity: 0.9;
-  }
-
-  .menu.open {
-    display: flex;
-  }
-
-  .hamburger.open .line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.open .line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.open .line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .menu a {
-    text-align: right;
-    padding: 10px 30px 10px 0;
-  }
-}
-
-/* Media query for Asymmetical Grid */
-@media (max-width: 800px) {
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 100px);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-  }
-    
-  .div1 { grid-area: 1 / 1 / 3 / 3; }
-  .div2 { grid-area: 1 / 3 / 3 / 4; }
-  .div3 { grid-area: 3 / 1 / 7 / 4; }
-  .div4 { grid-area: 7 / 1 / 9 / 2; }
-  .div5 { grid-area: 7 / 2 / 9 / 4; }
-}
-
-/* Media Query for Gallery */
-@media (min-width: 700px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1025px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
