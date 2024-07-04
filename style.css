@@ -215,11 +215,21 @@ hr {
   transform: scale(1.07);
 }
 
+.grid-item iframe {
+  transition: transform .3s;
+  border-radius: 10px;
+}
+
+.grid-item iframe:hover {
+  transform: scale(1.07);
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  border-radius: 10px;
 }
 
 /* Footer Style */

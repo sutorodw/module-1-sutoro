@@ -1,5 +1,5 @@
 # MiniBlog - A Simple Blog Website
-This is a basic HTML website project showcasing a mini-blog with a focus on photos, short videos, and travel experiences. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation. Add content that fits the topic and create a form with text boxes, a big text box, a button to submit, and checkboxes to make it more interactive and useful for users.
+This is a basic HTML website created as part of RevoU Bootcamp project showcasing a mini-blog with a focus on photos, short videos, and travel stories. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation. Add content that fits the topic and create a form with text boxes, a big text box, a button to submit, and checkboxes to make it more interactive and useful for users.
 
 
 ## Features
@@ -93,7 +93,7 @@ This is a basic HTML website project showcasing a mini-blog with a focus on phot
 
 - The `<footer>` tag defines a footer for a document or section.
   - `<footer style="background-color: #ffb3b3; text-align: center;" >`
-  - `<p>Created by: Sutoro</p>`
+  - `<p>© 2024 Sutoro</p>`
 
 
 ## Screenshot
