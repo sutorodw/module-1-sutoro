@@ -151,6 +151,10 @@ hr {
   color: #ffffff;
 }
 
+.about-container:hover h2 {
+  color: #ffffff;
+}
+
 .about-container img {
   object-fit: cover;
   height: 300px;
