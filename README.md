@@ -1,6 +1,9 @@
 # MiniBlog - A Simple Blog Website
-This is a basic HTML website created as part of RevoU Bootcamp project showcasing a mini-blog with a focus on photos, short videos, and travel stories. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation. Add content that fits the topic and create a form with text boxes, a big text box, a button to submit, and checkboxes to make it more interactive and useful for users.
+This is a basic HTML website created as part of RevoU Bootcamp project showcasing a mini-blog with a focus on photos, short videos, and travel stories. It is built with basic HTML layout for responsive website, ensuring the use of appropriate tags for a well-structured foundation.
 
+The website is deployed on github pages, Netifly and recently has been deployed using custom domain and can be visited here http://meworld.site. 
+
+The following is simple information regarding what features and tags that are implemented in this website. Click  [here](#Features) to jump to the Deployment Process. 
 
 ## Features
 
@@ -96,5 +99,18 @@ This is a basic HTML website created as part of RevoU Bootcamp project showcasin
   - `<p>© 2024 Sutoro</p>`
 
 
-## Screenshot
+## Deployement
+
+The deployment begins by importing project from GitHub repository to Netifly. To integrate Netifly to the custom domain, copy the Name Servers from Netifly to the domain provider. 
+
+Name Servers from Netifly
+![Name Servers](/images/name-servers.png)
+
+Name Servers from the Domain Provider
+![Name Servers2](/images/name-servers2.png)
+
+It may take up to 24 hours to get the website deployed with the custom domain.
+
+
+## Screenshot of the Website
 ![Screenshot of the website](images/screenshot.jpeg)
